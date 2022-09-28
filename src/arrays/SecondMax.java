@@ -8,20 +8,20 @@ public class SecondMax
         System.out.println("SecondMax: "+getSecondMax(ipArray));
     }
 
-    private static int getSecondMax(int arr[])
+    private static int getSecondMax(int ipArray[])
     {
         int max = Integer.MIN_VALUE;
         int secondMax = Integer.MAX_VALUE;
-        for(int i=0;i<arr.length;i++)
+        for(int i=0;i<ipArray.length;i++)
         {
-            if(max<arr[i])
+            if(max<ipArray[i])
             {
                 secondMax=max;
-                max=arr[i];
+                max=ipArray[i];
             }
-            else if(secondMax<arr[i] && max >arr[i])
+            else if(secondMax<ipArray[i] && max >ipArray[i])
             {
-                secondMax=arr[i];
+                secondMax=ipArray[i];
             }
         }
         return secondMax;
