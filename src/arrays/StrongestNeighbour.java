@@ -29,10 +29,10 @@ class StrongestNeighbour
     public static void main(String args[])
     {
         int arr[] = {1,2,2,3,4,5};
-        int[] array = new StrongestNeighbour().getStrongestNeighbour(arr);
-        for(int i=0;i<array.length;i++)
+        int[] array1 = new StrongestNeighbour().getStrongestNeighbour(arr);
+        for(int i=0;i<array1.length;i++)
         {
-            System.out.print(" "+array[i]);
+            System.out.print(" "+array1[i]);
         }
     }
 }
