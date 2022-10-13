@@ -13,18 +13,19 @@ public class FloorValue {
             {
                 right = mid-1;
             }
-            else if(givenArray[mid]<givenNumber)
-            {
-                if(givenArray[mid+1]>givenNumber)
-                {
-                    return mid;
-                }
-            }
-            else if(givenArray[mid+1]>givenNumber)
+            if(givenArray[mid]<givenNumber)
             {
                 left = mid+1;
             }
-            else if(left == right) {
+            if(givenArray[mid]<givenNumber && givenArray[mid+1]>givenNumber)
+                {
+                    left = mid+1;
+                }
+            if(givenArray[mid+1]>givenNumber)
+            {
+                left = mid+1;
+            }
+            if(left == right) {
                 return givenArray[left];
             }
         }
@@ -34,7 +35,7 @@ public class FloorValue {
     {
         int givenArray[] ={1,8,10,11,12,19};
         int size = 6;
-        int givenNumber = 1;
+        int givenNumber = 18;
         System.out.println(floorValue(givenArray,givenNumber,size));
     }
 }
