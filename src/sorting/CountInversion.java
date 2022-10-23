@@ -26,11 +26,13 @@ public class CountInversion {
             {
                 arr[k]= leftArray[i];
                 i++;
+                k++;
             }
             else
             {
                 arr[k] = rightArray[j];
                 j++;
+                k++;
             }
         }
         while(i>n && j<m)
