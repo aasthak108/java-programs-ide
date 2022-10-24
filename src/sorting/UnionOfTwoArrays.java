@@ -20,7 +20,6 @@ public class UnionOfTwoArrays {
             else if(arr1[i]<arr2[j] && arr1[i-1]!=arr1[i])
             {
                 arr[k]=arr1[i];
-                i++;
                 j++;
                 k++;
             }
