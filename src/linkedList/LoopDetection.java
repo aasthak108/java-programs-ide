@@ -37,7 +37,7 @@ package linkedList;
         public static void main(String[] args)
         {
             LoopDetection list = new LoopDetection();
-            list.head = new Node(1);
+            list.head = new Node(6);
             list.head.next = new Node(2);
             list.head.next.next = new Node(3);
             list.head.next.next.next = new Node(4);
