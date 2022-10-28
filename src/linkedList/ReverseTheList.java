@@ -32,7 +32,7 @@ public class ReverseTheList {
         list.head.next = new Node(2);
         list.head.next.next = new Node(3);
         list.head.next.next.next = new Node(4);
-        list.reverseTheList(head);
+        list.head=list.reverseTheList(list.head);
         list.printList(head);
     }
 
