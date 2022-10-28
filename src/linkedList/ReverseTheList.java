@@ -4,7 +4,7 @@ public class ReverseTheList {
     public static Node reverseTheList(Node head)
     {
         Node prev = null;
-        Node nextNode = null;
+        Node nextNode= null;
         Node curr = head;
         while(curr!=null)
         {
@@ -14,7 +14,7 @@ public class ReverseTheList {
             curr = nextNode;
         }
         head = prev;
-        return head;
+        return prev;
     }
     static void printList(Node head)
     {
@@ -33,7 +33,6 @@ public class ReverseTheList {
         list.head.next.next = new Node(3);
         list.head.next.next.next = new Node(4);
         list.reverseTheList(head);
-        head = list.reverseTheList(head);
         list.printList(head);
     }
 
