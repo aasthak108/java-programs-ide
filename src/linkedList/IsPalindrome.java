@@ -2,6 +2,24 @@ package linkedList;
 
 public class IsPalindrome {
     static Node head;
+    static void add(int data)
+    {
+        Node curr=new Node(data);
+        if(head==null)
+        {
+            head=curr;
+        }
+        else
+        {
+            Node temp=head;
+            while(temp.next!=null)
+            {
+                temp=temp.next;
+            }
+            temp.next=curr;
+        }
+    }
+
     static boolean isPalindrome(Node head)
     {
         Node curr = head;
@@ -43,11 +61,11 @@ public class IsPalindrome {
     public static void main(String[] args)
     {
         IsPalindrome list = new IsPalindrome();
-        list.head = new Node(1);
-        list.head.next = new Node(2);
-        list.head.next.next = new Node(2);
-        list.head.next.next.next = new Node(2);
-        list.head.next.next.next.next = new Node(1);
+        list.add(1);
+        list.add(2);
+        list.add(2);
+        list.add(2);
+        list.add(1);
         System.out.println(" " + isPalindrome(list.head));
     }
 
