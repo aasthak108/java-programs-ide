@@ -6,19 +6,23 @@ public class RemoveLoop {
     {
         Node curr=head;
         Node temp=head;
-        int count=0;
-        while(count!=x)
+        Node curr1 = null;
+        int count =0;
+        
+        while(count<=x)
         {
             count++;
             curr = curr.next;
         }
-        while(temp!=null)
+        curr1 = curr;
+        while(temp.next!=curr1)
         {
-            if(temp.next.data == curr.data)
-            {
-                temp.next = null;
-                return 1;
-            }
+                temp = temp.next;
+        }
+        if(temp.next==curr1)
+        {
+            temp.next=null;
+            return 1;
         }
         return 0;
     }
@@ -28,9 +32,6 @@ public class RemoveLoop {
         list.head = new Node(2);
         list.head.next = new Node(3);
         list.head.next.next = new Node(4);
-        list.head.next.next.next = list.head.next;
-        System.out.println(""+ list.removeLoop(head,2));
+        System.out.println(removeLoop(list.head,2));
     }
-
-
 }
