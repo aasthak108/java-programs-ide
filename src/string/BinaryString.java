@@ -15,7 +15,7 @@ public class BinaryString {
     }
     public static void main(String[] args)
     {
-        String str = "1111";
+        String str = "11100";
         System.out.println(" NUmber of Sub String is/are " + numberOfSubstrings(str));
     }
 }
