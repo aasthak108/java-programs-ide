@@ -6,9 +6,9 @@ public class RemoveLoop {
     {
         Node curr=head;
         Node temp=head;
-        Node curr1 = null;
+        Node curr1 = head;
+        Node temp1 = head;
         int count =0;
-        
         while(count<=x)
         {
             count++;
@@ -19,9 +19,10 @@ public class RemoveLoop {
         {
                 temp = temp.next;
         }
-        if(temp.next==curr1)
+        temp1 =  temp;
+        if(temp1.next==curr1)
         {
-            temp.next=null;
+            temp1.next=null;
             return 1;
         }
         return 0;
