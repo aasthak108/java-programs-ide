@@ -28,8 +28,8 @@ public class AdjMatrix {
     {
         AdjMatrix adj = new AdjMatrix(5);
         adj.addEdge(0,1);
-        adj.addEdge(1,2);
         adj.addEdge(2,3);
+        adj.addEdge(1,2);
         adj.addEdge(3,4);
         adj.printGraph();
     }
