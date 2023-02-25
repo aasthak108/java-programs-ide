@@ -30,7 +30,6 @@ public class AdjList {
         addEdge(adj, 1, 4);
         addEdge(adj, 2, 3);
         addEdge(adj, 3, 4);
-
         printGraph(adj);
     }
 }
