@@ -14,7 +14,9 @@ class DfsTraversal {
     }
 
     void addEdge(int u, int v) {
+
         adjList[u].add(v);
+        adjList[v].add(u);
     }
 
     void DFS(int start) {
@@ -55,6 +57,6 @@ class DfsTraversal {
         graph.addEdge(5, 4);
         graph.addEdge(5, 3);
         System.out.println("Breadth First Traversal for the graph is:");
-        graph.DFS(4);
+        graph.DFS(0);
     }
 }
