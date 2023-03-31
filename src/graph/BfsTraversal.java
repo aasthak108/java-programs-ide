@@ -18,6 +18,7 @@ public class BfsTraversal {
     }
     void addEdge(int u , int v)
     {
+
         adj[u].add(v);
     }
     public static void bfsTraversal(int s)
