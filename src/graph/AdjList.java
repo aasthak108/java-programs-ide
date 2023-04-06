@@ -23,7 +23,7 @@ public class AdjList {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>> (v);
         for (int i = 0; i < v; i++)
         adj.add(new ArrayList<Integer>());
-        addEdge(adj, 0, 1);
+        //addEdge(adj, 0, 1);
         addEdge(adj, 0, 4);
         addEdge(adj, 1, 2);
         addEdge(adj, 1, 3);
