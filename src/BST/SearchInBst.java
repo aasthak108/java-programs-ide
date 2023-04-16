@@ -47,11 +47,12 @@ class Node {
 
         public static void main(String[] args) {
             Node root = new Node(24);
-            Insert add = new Insert();
-            add.insert(root, 12);
-            add.insert(root, 45);
-            add.insert(root, 34);
-            add.insert(root, 1);
+            //Insert add = new Insert();
+            //add.insert(root, 12);
+            //add.insert(root, 45);
+            //add.insert(root, 34);
+            //add.insert(root, 1);
+            Insert.insert(root,1);
             System.out.println(searchInBst(root, 1));
         }
 
