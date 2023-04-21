@@ -1,25 +1,40 @@
 package hashing;
-import java.util.HashSet;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class IntersectionOfTwoArrays {
-    static void intersectionOfTwoArrays(int arr1[],int arr2[])
+    static void intersectionOfTwoArrays(int nums1[],int nums2[])
     {
-        HashSet<Integer> hs = new HashSet<Integer>();
-        for(int i=0;i<arr1.length;i++)
+        Map<Integer, Integer> h = new HashMap<>();
+        for(int i=0;i<nums1.length;i++)
         {
-            hs.add(arr1[i]);
+            h.put(nums1[i],h.getOrDefault(nums1[i],0)+1);
         }
-        for(int i =0;i<arr2.length;i++)
-        {
-            if(hs.contains(arr2[i]))
-            {
-                System.out.println(""+arr2[i]);
+
+        List<Integer> list = new ArrayList<>();
+        for(int i=0; i<nums2.length; i++){
+            if(h.containsKey(nums2[i]) && h.get(nums2[i])>0){
+                list.add(nums2[i]);
+                h.put(nums2[i], h.get(nums2[i])-1);
             }
         }
+
+        int[] ans = new int[list.size()];
+        for(int i=0; i<list.size(); i++)
+            ans[i] = list.get(i);
+        for(int i=0;i<ans.length;i++)
+        {
+            System.out.println(" " + ans[i]);
+        }
+
     }
     public static void main(String[] args)
     {
-        int arr1[]={1,2,3,4,7,5};
-        int arr2[] ={1,2,3,6,7,8};
+        int arr1[]={4,9,7};
+        int arr2[] ={1,2,4,9,4,9};
         intersectionOfTwoArrays(arr1,arr2);
     }
 
