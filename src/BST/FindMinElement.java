@@ -26,5 +26,4 @@ public class FindMinElement {
         add.insert(root,27);
         System.out.println(findMinElement(root));
     }
-
 }
