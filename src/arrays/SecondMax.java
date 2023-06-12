@@ -4,26 +4,28 @@ public class SecondMax
 {
     public static void main(String[] args)
     {
-        int[] ipArray = {6,8,1,4,6,200,78,99,202,201,10,79,101,99,100};
+        int[] ipArray = {6,8,1,4,6,200,78,99,202,202,10,79,101,99,100};
         System.out.println("SecondMax: "+getSecondMax(ipArray));
     }
 
-    private static int getSecondMax(int ipArray[])
-    {
-        int max = Integer.MIN_VALUE;
-        int secondMax = Integer.MAX_VALUE;
+    private static int getSecondMax(int ipArray[]) {
+        int max =0;
+        int max2 = -1;
         for(int i=0;i<ipArray.length;i++)
         {
-            if(max<ipArray[i])
+            if(ipArray[i]>max)
             {
-                secondMax=max;
-                max=ipArray[i];
-            }
-            else if(secondMax<ipArray[i] && max >ipArray[i])
-            {
-                secondMax=ipArray[i];
+                max = ipArray[i];
             }
         }
-        return secondMax;
+        for(int i=0;i<ipArray.length;i++)
+        {
+            if(ipArray[i]<max && ipArray[i]>max2)
+            {
+                max2 = ipArray[i];
+            }
+        }
+        return max2;
+
     }
 }
