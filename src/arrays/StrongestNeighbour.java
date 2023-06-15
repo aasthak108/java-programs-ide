@@ -1,31 +1,39 @@
 package arrays;
 
 
-class StrongestNeighbour
-{
+class StrongestNeighbour {
     static int[] getStrongestNeighbour(int arr[])
     {
-        int[] result = new int[arr.length];
-        int length = arr.length;
-        int count =0;
-        for(int i=0;i<length-1;i++)
-        {
-            if(arr[i]<=arr[i+1])
-            {
-                result[i]=arr[i+1];
+                int count =0;
+                for(int i =0;i<arr.length-1;i++)
+                {
+                    if(arr[i]<= arr[i+1])
+                        count++;
+                }
+                int[] arr2 = new int[count];
+                int j=0;
+                for (int i = 0; i < arr.length; i++) {
+                    if(count ==1 )
+                    {
+                        arr2[j]=arr[i];
+                    }
+                    else if (i==0 && arr[i] == arr[i+1]) {
+                        arr2[j] = arr[i];
+                        j++;
+                    }
+                    else if(i == arr.length-1 && arr[arr.length-1]>=arr[arr.length-2])
+                    {
+                        arr2[j]=arr[i];
+                        j++;
+                    }
+                    else if(i!=0 && i!=arr.length-1)
+                    {
+                        arr2[j]=arr[i];
+                        j++;
+                    }
+                }
+                return arr2;
             }
-            else if(arr[i]>=arr[i+1])
-            {
-                count++;
-                result[i]=arr[i+count+1];
-            }
-            else
-            {
-                result[i]=arr[i];
-            }
-        }
-        return result;
-    }
     public static void main(String args[])
     {
         int arr[] = {1,2,2,3,4,5};
