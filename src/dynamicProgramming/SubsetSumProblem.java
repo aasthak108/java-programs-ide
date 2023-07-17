@@ -4,6 +4,7 @@ public class SubsetSumProblem {
 
     static boolean isSubset(int sum, int n, int arr[]) {
     boolean t[][] = new boolean[sum+1][n+1];
+    int count =0;
     for(int i=1;i<sum+1;i++){
         t[i][0]=false;
     }
@@ -20,11 +21,12 @@ public class SubsetSumProblem {
             }
         }
     }
+    //System.out.println(""+count);
     return t[sum][n];
     }
     public static void main(String[] args){
-        int arr[]= {3, 34, 4, 12, 5, 2};
-        int sum =3;
+        int arr[]= {2, 4, 4,3};
+        int sum =6;
         int n = arr.length;
         System.out.println(""+ isSubset(sum,n,arr));
 
