@@ -25,9 +25,7 @@ public class EqualSumPartitionTD {
     {
         t[0][j] = true;
     }
-        for(
-    int j = 1;
-    j<n+1;j++)
+        for(int j = 1;j<n+1;j++)
 
     {
         for (int i = 1; i < sum + 1; i++) {
