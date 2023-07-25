@@ -4,7 +4,7 @@ public class SubsetSumProblem {
 
     static boolean isSubset(int sum, int n, int arr[]) {
     boolean t[][] = new boolean[sum+1][n+1];
-    int count =0;
+    //int count =0;
     int k=0;
         int a[] = new int[sum/2];
     for(int i=1;i<sum+1;i++){
