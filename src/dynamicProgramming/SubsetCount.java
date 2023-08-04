@@ -11,7 +11,7 @@ public class SubsetCount {
         int mod = 1000000007;
         return (res(arr,n,sum,t)%mod);
     }
-    static int res(int[]arr,int n,int sum,int[][]t){
+   static int res(int[]arr,int n,int sum,int[][]t){
         int mod = 1000000007;
         if(t[n][sum]!= -1){
             return t[n][sum];
