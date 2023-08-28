@@ -6,8 +6,7 @@ public class RemainingFrequency {
             Scanner sc = new Scanner(System.in);
             int count=0;
             String s = sc.nextLine();
-            StringBuilder result = new StringBuilder();
-
+            StringBuilder r= new StringBuilder();
             for (int i = 0; i < s.length(); i++) {
 
                 for (int j = i+1; j < s.length(); j++) {
@@ -16,12 +15,11 @@ public class RemainingFrequency {
                     }
                 }
 
-                result.append(count);
+                r.append(count);
                 count=0;
             }
 
-
-            System.out.println(result.toString());
+            System.out.println(r.toString());
         }
     }
-    
+
