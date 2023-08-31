@@ -1,17 +1,25 @@
 package javaConcepts;
 
-interface A{
-    void show();
-}
-interface B{
-    void show();
-}
- class MultipleInheritance implements A,B{
-    public void show() {
-        System.out.println("A&B");
+interface A {
+    default void show() {
+        System.out.println("showA");
     }
-    public static void main(String args[]){
-        MultipleInheritance m = new MultipleInheritance();
-        m.show();
-     }
 }
+
+interface B {
+    default void show() {
+        System.out.println("showB");
+    }
+}
+
+public class MultipleInheritance implements A, B {
+    public void show() {
+        A.super.show(); // Calling show method from interface A
+    }
+
+    public static void main(String args[]) {
+        MultipleInheritance m = new MultipleInheritance();
+        m.show(); // Calling the default method using the instance of MultipleInheritance
+    }
+}
+
