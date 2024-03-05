@@ -13,15 +13,13 @@ public class SubsetSumProblem {
     for(int j=0;j<n+1;j++){
         t[0][j]=true;
     }
-    for(int i=1;i<sum+1;i++){
-        for(int j=1;j<n+1;j++){
-            if(arr[j-1]<=i){
-                t[i][j]= t[i-arr[j-1]][j-1] || t[i][j-1];
+    for(int i=1;i<sum+1;i++) {
+        for (int j = 1; j < n + 1; j++)
+            if (arr[j - 1] <= i) {
+                t[i][j] = t[i - arr[j - 1]][j - 1] || t[i][j - 1];
+            } else {
+                t[i][j] = t[i][j - 1];
             }
-            else{
-                t[i][j]=t[i][j-1];
-            }
-        }
     }
     for(int i=n;i<=n;i++){
         for(int j=0;j<sum/2;j++){
