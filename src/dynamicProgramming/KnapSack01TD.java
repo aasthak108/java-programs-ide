@@ -31,5 +31,6 @@ public class KnapSack01TD {
        int n = wt.length;
        System.out.println(knapSack01(W,wt,val,n));
 
+
    }
 }
