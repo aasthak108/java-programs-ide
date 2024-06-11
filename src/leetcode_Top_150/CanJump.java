@@ -2,17 +2,17 @@ package leetcode_Top_150;
 
 public class CanJump {
     public static boolean canJump(int[] nums) {
-        int i=0;
         int count =0;
-        while(i <= nums.length){
+        int j =0;
+        for(int i =0;i<=nums.length;i++){
+            j = count;
             count = nums[i];
+            count = count + i;
+
         }
-        i = i+ count;
-        if(i >= nums.length){
+        if(count + 1 == nums.length ){
             return true;
         }
-        i = i + nums[i];
-
         return false;
     }
     public static void main(String args[]){
