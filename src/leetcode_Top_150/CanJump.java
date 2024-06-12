@@ -2,21 +2,22 @@ package leetcode_Top_150;
 
 public class CanJump {
     public static boolean canJump(int[] nums) {
-        int count =0;
-        int j =0;
-        for(int i =0;i<=nums.length;i++){
-            j = count;
+        int count = 0;
+        int j = 0;
+        for (int i = 0; i < nums.length-1; i++) {
+
+            i = j;
             count = nums[i];
-            count = count + i;
+            j = j + count;
 
         }
-        if(count + 1 == nums.length ){
+        if (j+1 == nums.length) {
             return true;
         }
         return false;
     }
     public static void main(String args[]){
-        int nums [] = {2,3,1,1,4};
+        int nums [] = {3,2,1,0,4};
         System.out.println("" + canJump(nums));
     }
 }
