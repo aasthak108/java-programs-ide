@@ -5,6 +5,7 @@ public class CanJumpDP {
         int n = arr.length;
         boolean dp[] = new boolean[n];
         dp[0] = true;
+        int num = 0;
         for(int i=0;i<n;i++){
             if(dp[i]){
                 int count = Math.min(i + arr[i], n-1);
