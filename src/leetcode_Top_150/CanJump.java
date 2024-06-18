@@ -10,15 +10,15 @@ public class CanJump {
                 return false;
             }
             count = Math.max(nums[i] + i, count);
+            if(count >= nums.length-1) {
+                return true;
+            }
 
-        }
-        if (count >= nums.length) {
-            return true;
         }
         return true;
     }
     public static void main(String args[]){
-        int nums [] = {1,0,1,0};
+        int nums [] = {2,3,1,1,4};
         System.out.println("" + canJump(nums));
     }
 }
