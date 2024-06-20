@@ -8,9 +8,9 @@ public class CanJumpDP {
         int num = 0;
         for(int i=0;i<n;i++){
             if(dp[i]){
-                int count = Math.min(i + arr[i], n-1);
-                for(int j = i+1;j<= count;j++){
-                    
+                int count1 = Math.min(i + arr[i], n-1);
+                for(int j = i+1;j<= count1;j++){
+
                     dp[j] = true;
                     if(j == n-1){
                         return true;
