@@ -1,10 +1,10 @@
-package com.binarytree;
+package binarytree1;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
 public class BinaryTreeInsertion {
-    static class Node {
+
+static class Node {
         int data;
         Node left;
         Node right;

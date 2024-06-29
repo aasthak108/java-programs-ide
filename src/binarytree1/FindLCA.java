@@ -1,4 +1,4 @@
-package com.binarytree;
+package binarytree1;
 
 
 public class FindLCA {
