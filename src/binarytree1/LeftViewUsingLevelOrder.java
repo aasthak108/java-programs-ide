@@ -60,7 +60,7 @@ public class LeftViewUsingLevelOrder
         root.left = new Node(4);
         root.left.left = new Node(9);
         root.right = new Node(10);
-        root.left.right = new Node(2);
+        root.left.right = new Node(3);
         leftView(root);
     }
 
