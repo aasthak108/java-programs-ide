@@ -39,7 +39,7 @@ public class CPUTaskScheduler {
     }
     public static void main(String args[]){
 
-        char[] tasks1 = {'A', 'A', 'A', 'B', 'B', 'B'};
+        char[] tasks1 = {'B', 'A', 'A', 'B', 'B', 'B'};
         int n1 = 2;
         System.out.println(CPUTaskScheduler.leastInterval(tasks1, n1)); // Output: 8
 
