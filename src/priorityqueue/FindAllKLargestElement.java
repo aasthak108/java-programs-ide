@@ -33,7 +33,7 @@ public class FindAllKLargestElement {
         int k1 = 2;
          kLargest(arr1,k1);
 
-        int arr2[] = {1, 23, 12, 9, 30, 2, 50}; // output -> 50,30,23
+        int arr2[] = {1, 23, 12, 9, 30, 2, 51}; // output -> 51,30,23
         int k2 = 3;
         kLargest(arr2,k2);
     }
