@@ -1,7 +1,8 @@
 package arrays;
 
 public class EquilibriumPoint {
-    static int equiPoint(int arr[]) {
+    static int equiPoint(int arr[])
+    {
         int[] sum1 = new int[arr.length];
         int[] sum2 = new int[arr.length];
         sum1[0] = arr[0];
