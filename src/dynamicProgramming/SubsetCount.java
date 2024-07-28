@@ -41,7 +41,7 @@ public class SubsetCount {
         }
     }
     public static void main(String[] args){
-        int arr[] = {2,7,6,1,5,4,3};
+        int arr[] = {2,8,6,1,5,4,3};
         int n = arr.length;
         int sum =7;
         System.out.println(perfectSum(arr,n,sum));
