@@ -17,6 +17,9 @@ public class Student {
             name[i] = sc.nextLine();
             System.out.println("roll");
             roll[i]= sc.nextInt();
+            if(roll[i]==0){
+                System.out.println("error");
+            }
             sc.nextLine();
         }
         for(int i=0;i<2;i++){

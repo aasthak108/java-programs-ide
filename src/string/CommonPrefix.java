@@ -12,12 +12,14 @@ public class CommonPrefix {
             else{
                 break;
             }
+
         }
         return sb.toString();
     }
     public static String  commonPrefix(String [] strs){
         String res = strs[0];
-        for(int i=1;i<strs.length;i++){
+        for(int i=1;i<strs.length;i++)
+        {
             res = common(res,strs[i]);
         }
         return res;
