@@ -26,8 +26,8 @@ public class CommonPrefix {
 
     }
     public static void main(String[] args) {
-        String[] strs = {"Flower", "Flow", "Flight"};
-        System.out.println(commonPrefix(strs));
+        String[] st = {"Flower", "Flow", "Flight"};
+        System.out.println(commonPrefix(st));
     }
 
 }
