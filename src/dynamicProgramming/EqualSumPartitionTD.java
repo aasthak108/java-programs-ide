@@ -36,7 +36,7 @@ public class EqualSumPartitionTD {
 
 
     public static void main(String[] args){
-        int arr[] = {1,5,5,11,1,3};
+        int arr[] = {1,5,5,11,11,3};
         int n =arr.length;
         System.out.println(""+ canPartition(n,arr));
     }
