@@ -1,5 +1,7 @@
 package arrays;
 
+//TC- O(N);
+//SC- O(N);
 public class EquilibriumPoint {
     static int equiPoint(int arr[])
     {
