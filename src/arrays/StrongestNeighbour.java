@@ -36,7 +36,7 @@ class StrongestNeighbour {
             }
     public static void main(String args[])
     {
-        int arr[] = {1,2,2,3,4,5};
+        int arr[] = {1,2,2,3,4,6};
         int[] array1 = new StrongestNeighbour().getStrongestNeighbour(arr);
         for(int i=0;i<array1.length;i++)
         {
