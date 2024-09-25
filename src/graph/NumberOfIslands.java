@@ -10,7 +10,8 @@ public class NumberOfIslands {
         {
             for(column=0;column<matrix[0].length;column++)
             {
-                if(matrix[row][column] == 1) {
+                if(matrix[row][column] == 1)
+                {
                     dfs(row, column, matrix);
                     count++;
                 }
@@ -33,7 +34,7 @@ public class NumberOfIslands {
 
     public static void main(String[] args)
     {
-        int matrix[][] =   {{1,0,1},{0,1,0},{1,1,1}};
+        int matrix[][] =   {{1,0,1},{0,1,0},{1,1,0}};
         System.out.println(numberOfIslands(matrix,0,0));
     }
 }
