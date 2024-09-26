@@ -28,7 +28,7 @@ public class NumberOfProvince {
 
     public static void main(String[] args)
     {
-        int[][] matrix = {{1,0,1},{0,1,0},{1,1,1}};
+        int[][] matrix = {{1,0,0},{0,1,0},{1,1,1}};
         boolean visited[] = new boolean[matrix.length];
         System.out.println(numberOfProvince(matrix,visited));
     }
