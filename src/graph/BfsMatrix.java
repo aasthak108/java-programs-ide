@@ -8,7 +8,7 @@ public class BfsMatrix {
     public BfsMatrix(int[][] matrix) {
         this.matrix = matrix;
         this.numRows = matrix.length;
-        this.numCols = matrix[0].length;
+        this.numCols = matrix[0].length; //gets the length of first row
         this.visited = new boolean[numRows][numCols];
     }
 
