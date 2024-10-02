@@ -1,7 +1,7 @@
 package graph;
 public class DfsMatrix {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 0,0}, {1,1,0}, {0,1,0}};
+        int[][] matrix = {{1, 0,0}, {1,1,0}, {1,1,0}};
         boolean[][] visited = new boolean[matrix.length][matrix[0].length];
         dfs(matrix, 0, 0, visited);
     }
