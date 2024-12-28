@@ -1,7 +1,7 @@
 package string;
 import java.util.HashSet;
 
-public class CountDistinctSubsequence
+public class CountDistinctSubsequenceRec
 {
     public static int countSub(String str, int n, String s1, HashSet<String> set1)
     {
