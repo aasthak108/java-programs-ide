@@ -26,7 +26,7 @@ public class StringMatching
     }
     public static void main(String args[])
     {
-        String[] str = {"leetcode", "et","code"};
+        String[] str = {"leetcode", "etc","code"};
         System.out.println(""+ strMatch(str));
     }
 }
