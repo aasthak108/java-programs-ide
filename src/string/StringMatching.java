@@ -8,15 +8,15 @@ public class StringMatching
     public static List<String> strMatch(String[] arr)
     {
         ArrayList<String> list = new ArrayList<>();
-        for(int i =0;i<arr.length;i++)
+        for(int k =0;k<arr.length;k++)
         {
             for(int j =0;j<arr.length;j++)
             {
-                if(i==j)
+                if(k==j)
                 {
                     continue;
                 }
-                if(arr[i].contains(arr[j]) && !list.contains(arr[j]))
+                if(arr[k].contains(arr[j]) && !list.contains(arr[j]))
                 {
                     list.add(arr[j]);
                 }
