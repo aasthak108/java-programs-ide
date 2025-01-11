@@ -27,7 +27,7 @@ public class CoinChangeRec
 
     public static void main(String[] args)
     {
-        int coins[] = {1, 2, 3};
+        int coins[] = {1, 2, 4};
         int sum = 4;
         System.out.println(count(coins, sum)); // Output: 4
     }
