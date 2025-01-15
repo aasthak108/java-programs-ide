@@ -10,7 +10,7 @@ public class TopologicalSortingDFS
     {
         int[] vis = new int[adj.size()];
         Stack<Integer> st = new Stack<>();
-        ArrayList<Integer>ans=new ArrayList<>();
+        ArrayList<Integer>answer=new ArrayList<>();
         for(int i =0;i<adj.size();i++)
         {
             if(vis[i]==0)
@@ -20,9 +20,9 @@ public class TopologicalSortingDFS
         }
         while(!st.isEmpty())
         {
-            ans.add(st.pop());
+            answer.add(st.pop());
         }
-        return ans;
+        return answer;
     }
     public static void dfs(int node,ArrayList<ArrayList<Integer>> adj,Stack<Integer> st, int[]vis)
     {
