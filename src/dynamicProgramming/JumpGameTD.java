@@ -24,8 +24,8 @@ public class JumpGameTD
     }
     public static void main(String[] args)
     {
-        int[] arr= {1,1,2};
-        System.out.println("" + canJump(arr));
+        int[] array= {1,1,2};
+        System.out.println("" + canJump(array));
     }
 
 }
