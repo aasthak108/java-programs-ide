@@ -33,3 +33,28 @@ public class IsPrefixWordMatchWithSentence {
         System.out.println(""+ isPrefix(s1,s2));
     }
 }
+/* class Solution {
+    public int countGoodStrings(int low, int high, int zero, int one) {
+        String s0 = " ";
+        String s1 = " ";
+        String str2 = " ";
+        for(int i =0;i<zero;i++){
+            s0 = s0+"0";
+        }
+        for(int i =0;i<one;i++){
+            s1 = s1+"1";
+        }
+        return helper(low,high,len,str1,s1,s0);
+    }
+    public static int helper(int low,int high, int len,String str2,String s1,String s0){
+        if(str2.length()== low && str2.length()<=high){
+            int oneCount = helper(low,high--,str.length(),str2+s1,s0);
+            int zeroCount = helper(low,high--, str.length(), s1,str2+s0);
+        }
+        if(high==0)
+        {
+            return oneCount + zeroCount;
+        }
+
+    }
+}*/
