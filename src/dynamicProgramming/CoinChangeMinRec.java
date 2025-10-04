@@ -30,7 +30,7 @@ public class CoinChangeMinRec
             public static void main(String args[])
             {
             int arr[] = {1,2,3};
-            int sum = 8;
+            int sum = 4;
             System.out.println(""+ coinChange(arr,sum));
             }
 }
